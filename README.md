@@ -74,6 +74,14 @@ Roast & Brew är ett litet kafferosteri som idag bara säljer via sin fysiska bu
 - Kunden ser en bekräftelse med sitt ordernummer
 - Kunden kan navigera tillbaka till produktlistan
 
+## UML-diagram
+
+### Klassdiagram
+![Klassdiagram](docs/class-diagram.png)
+
+### Aktivitetsdiagram
+![Aktivitetsdiagram — Beställ en produkt](docs/activity-diagram.png)
+
 ## Designval och motiveringar
 
 **Varför klassdiagram?** Domänen har tydliga entiteter (Product, Category, Order) med relationer som passar bra att modellera med klasser. Det visar strukturen i systemet.
