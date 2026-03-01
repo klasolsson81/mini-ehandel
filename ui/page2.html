@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethiopia Yirgacheffe — Roast & Brew</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Roast &amp; Brew</h1>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Produkter</a></li>
+          <li><a href="page2.html" class="active">Beställ</a></li>
+          <li><a href="components.html">Komponenter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <p><a href="index.html">&larr; Tillbaka till produkter</a></p>
+
+      <section class="product-detail mt-lg">
+        <div>
+          <div class="product-detail-img" role="img" aria-label="Ethiopia Yirgacheffe kaffebönor" style="background: linear-gradient(135deg, #8B6F47, #5C3D2E);"></div>
+        </div>
+
+        <div>
+          <span class="badge badge-beans">Hela bönor</span>
+          <h2 class="mt-sm">Ethiopia Yirgacheffe</h2>
+          <p class="card-price">149 kr</p>
+          <p>Ljus rostning med toner av citrus och jasmin. Odlad på 1 800 meters höjd i Etiopiens kafferegion. Perfekt för pour-over och filterbryggning.</p>
+
+          <ul class="mt-sm mb-md">
+            <li><strong>Ursprung:</strong> Yirgacheffe, Etiopien</li>
+            <li><strong>Rostning:</strong> Ljus</li>
+            <li><strong>Vikt:</strong> 250g</li>
+            <li><strong>Smaknot:</strong> Citrus, jasmin, honung</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Beställningsformulär — kopplat till Use Case steg 4-7 -->
+      <section class="mt-lg" id="order-section">
+        <h2>Beställ denna produkt</h2>
+        <p class="text-light">Fyll i dina uppgifter så hör vi av oss med leveransbekräftelse.</p>
+
+        <form id="order-form" novalidate>
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="Ditt fullständiga namn" required>
+            <p class="form-error hidden" id="name-error">Vänligen fyll i ditt namn.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-postadress</label>
+            <input type="email" id="email" name="email" placeholder="namn@exempel.se" required>
+            <p class="form-error hidden" id="email-error">Vänligen ange en giltig e-postadress.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Leveransadress</label>
+            <textarea id="address" name="address" placeholder="Gatuadress, postnummer och ort" required></textarea>
+            <p class="form-error hidden" id="address-error">Vänligen fyll i din leveransadress.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Antal</label>
+            <select id="quantity" name="quantity">
+              <option value="1">1 st</option>
+              <option value="2">2 st</option>
+              <option value="3">3 st</option>
+              <option value="5">5 st</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Meddelande (valfritt)</label>
+            <textarea id="message" name="message" placeholder="Särskilda önskemål eller hälsning"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Beställ</button>
+        </form>
+      </section>
+
+      <!-- Bekräftelse — Use Case steg 7 -->
+      <section class="confirmation mt-lg" id="confirmation">
+        <h2>Tack för din beställning!</h2>
+        <p>Vi har tagit emot din beställning och skickar en bekräftelse till din e-post.</p>
+        <p class="text-light mt-sm">Ordernummer: <strong id="order-id">—</strong></p>
+        <a href="index.html" class="btn btn-secondary mt-md">Tillbaka till produkter</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Roast &amp; Brew. Skolprojekt — inget riktigt företag.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

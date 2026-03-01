@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roast & Brew — Specialkaffe online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Roast &amp; Brew</h1>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html" class="active">Produkter</a></li>
+          <li><a href="page2.html">Beställ</a></li>
+          <li><a href="components.html">Komponenter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Handrostade bönor, direkt hem</h2>
+      <p>Upptäck vårt urval av specialkaffe — från hela bönor till nymalt, plus allt du behöver för den perfekta koppen.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+
+      <h2>Våra produkter</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filtrera produkter efter kategori">
+        <button class="filter-btn active" data-category="all">Alla</button>
+        <button class="filter-btn" data-category="beans">Hela bönor</button>
+        <button class="filter-btn" data-category="ground">Malt kaffe</button>
+        <button class="filter-btn" data-category="accessories">Tillbehör</button>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+
+        <article class="card" data-category="beans">
+          <div class="card-img" role="img" aria-label="Ethiopia Yirgacheffe kaffebönor" style="background: linear-gradient(135deg, #8B6F47, #5C3D2E);"></div>
+          <div class="card-body">
+            <span class="badge badge-beans">Hela bönor</span>
+            <h3>Ethiopia Yirgacheffe</h3>
+            <p class="card-price">149 kr</p>
+            <p class="text-light">Ljus rostning med toner av citrus och jasmin. 250g.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="beans">
+          <div class="card-img" role="img" aria-label="Colombia Supremo kaffebönor" style="background: linear-gradient(135deg, #6B4226, #3E2723);"></div>
+          <div class="card-body">
+            <span class="badge badge-beans">Hela bönor</span>
+            <h3>Colombia Supremo</h3>
+            <p class="card-price">139 kr</p>
+            <p class="text-light">Medelmörk rostning. Nötig, chokladig, välbalanserad. 250g.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="ground">
+          <div class="card-img" role="img" aria-label="Husblandning malt kaffe" style="background: linear-gradient(135deg, #A0826D, #7B5B4C);"></div>
+          <div class="card-body">
+            <span class="badge badge-ground">Malt kaffe</span>
+            <h3>Husblandning</h3>
+            <p class="card-price">119 kr</p>
+            <p class="text-light">Vår klassiker — mörk rostning, perfekt för bryggkaffe. 400g.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="ground">
+          <div class="card-img" role="img" aria-label="Espresso Forte malt kaffe" style="background: linear-gradient(135deg, #4E342E, #3E2723);"></div>
+          <div class="card-body">
+            <span class="badge badge-ground">Malt kaffe</span>
+            <h3>Espresso Forte</h3>
+            <p class="card-price">129 kr</p>
+            <p class="text-light">Intensiv espressomalning med krämig crema. 250g.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="accessories">
+          <div class="card-img" role="img" aria-label="Handkvarn i trä" style="background: linear-gradient(135deg, #C8D8C4, #8FA88A);"></div>
+          <div class="card-body">
+            <span class="badge badge-accessories">Tillbehör</span>
+            <h3>Handkvarn Classic</h3>
+            <p class="card-price">349 kr</p>
+            <p class="text-light">Kvarn i trä med keramiska kvarnar. Justerbar malningsgrad.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="accessories">
+          <div class="card-img" role="img" aria-label="Pour-over set" style="background: linear-gradient(135deg, #B8C8B4, #7A9A70);"></div>
+          <div class="card-body">
+            <span class="badge badge-accessories">Tillbehör</span>
+            <h3>Pour-over Set</h3>
+            <p class="card-price">279 kr</p>
+            <p class="text-light">Keramisk dripper med glaskaraff och 50 pappersfilter.</p>
+            <a href="page2.html" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Roast &amp; Brew. Skolprojekt — inget riktigt företag.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komponenter — Roast & Brew</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Roast &amp; Brew</h1>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Produkter</a></li>
+          <li><a href="page2.html">Beställ</a></li>
+          <li><a href="components.html" class="active">Komponenter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <h1>Komponent-showcase</h1>
+      <p class="text-light mb-md">Alla återanvändbara UI-komponenter samlade på ett ställe.</p>
+
+      <!-- Knappar -->
+      <section class="mt-lg">
+        <h2>Knappar</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+          <button class="btn btn-primary">Primär knapp</button>
+          <button class="btn btn-secondary">Sekundär knapp</button>
+          <button class="btn btn-primary btn-small">Liten primär</button>
+          <button class="btn btn-secondary btn-small">Liten sekundär</button>
+        </div>
+      </section>
+
+      <!-- Badges -->
+      <section class="mt-lg">
+        <h2>Badges / Kategorier</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="badge badge-beans">Hela bönor</span>
+          <span class="badge badge-ground">Malt kaffe</span>
+          <span class="badge badge-accessories">Tillbehör</span>
+          <span class="card-category">Generisk kategori</span>
+        </div>
+      </section>
+
+      <!-- Produktkort -->
+      <section class="mt-lg">
+        <h2>Produktkort</h2>
+        <div style="max-width: 300px;">
+          <article class="card">
+            <div class="card-img" role="img" aria-label="Exempelprodukt" style="background: linear-gradient(135deg, #8B6F47, #5C3D2E);"></div>
+            <div class="card-body">
+              <span class="badge badge-beans">Hela bönor</span>
+              <h3>Produktnamn</h3>
+              <p class="card-price">149 kr</p>
+              <p class="text-light">Kort beskrivning av produkten.</p>
+              <a href="#" class="btn btn-primary btn-small">Visa &amp; beställ</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulär -->
+      <section class="mt-lg">
+        <h2>Formulärfält</h2>
+        <div style="max-width: 400px;">
+          <div class="form-group">
+            <label for="demo-text">Textfält</label>
+            <input type="text" id="demo-text" placeholder="Skriv här...">
+          </div>
+          <div class="form-group">
+            <label for="demo-email">E-post</label>
+            <input type="email" id="demo-email" placeholder="namn@exempel.se">
+          </div>
+          <div class="form-group">
+            <label for="demo-select">Dropdown</label>
+            <select id="demo-select">
+              <option>Alternativ 1</option>
+              <option>Alternativ 2</option>
+              <option>Alternativ 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="demo-textarea">Textyta</label>
+            <textarea id="demo-textarea" placeholder="Längre text här..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="demo-error">Fält med fel</label>
+            <input type="text" id="demo-error" style="border-color: var(--color-error);">
+            <p class="form-error">Det här fältet är obligatoriskt.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filterknappar -->
+      <section class="mt-lg">
+        <h2>Filterknappar</h2>
+        <div class="filter-bar">
+          <button class="filter-btn active">Alla</button>
+          <button class="filter-btn">Hela bönor</button>
+          <button class="filter-btn">Malt kaffe</button>
+          <button class="filter-btn">Tillbehör</button>
+        </div>
+      </section>
+
+      <!-- Typografi -->
+      <section class="mt-lg">
+        <h2>Typografi</h2>
+        <h1>Rubrik 1 (h1)</h1>
+        <h2>Rubrik 2 (h2)</h2>
+        <h3>Rubrik 3 (h3)</h3>
+        <p>Brödtext — Georgia serif, line-height 1.6, färg #2c2c2c.</p>
+        <p class="text-light">Ljus text — används för sekundär information.</p>
+      </section>
+
+      <!-- Färger -->
+      <section class="mt-lg mb-md">
+        <h2>Färgpalett</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.5rem;">
+          <div style="background: var(--color-primary); color: #fff; padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Primary<br>#5c3d2e</div>
+          <div style="background: var(--color-primary-light); color: #fff; padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Primary Light<br>#8b6f47</div>
+          <div style="background: var(--color-accent); padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Accent<br>#d4a574</div>
+          <div style="background: var(--color-bg); border: 1px solid var(--color-border); padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Background<br>#faf6f1</div>
+          <div style="background: var(--color-success); color: #fff; padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Success<br>#4a7c59</div>
+          <div style="background: var(--color-error); color: #fff; padding: 1rem; border-radius: 6px; text-align: center; font-size: 0.8rem;">Error<br>#c0392b</div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Roast &amp; Brew. Skolprojekt — inget riktigt företag.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
